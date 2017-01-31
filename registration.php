@@ -43,30 +43,29 @@ mysqli_close($db); // Closing Connection with Server
 	<div class="logo">register</div>
 	<!-- Main Form -->
 	<div class="login-form-1">
-		<form id="register-form" class="text-left" method="post" action="registration.php" autocomplete="off">
+		<form id="register-form" class="text-left" method="post" action="registration.php">
 			<div class="login-form-main-message"></div>
 			<div class="main-login-form">
 				<div class="login-group">
 					<div class="form-group">
 						<label for="reg_username" class="sr-only">Username</label>
-						<input type="text" class="form-control" id="reg_username" name="reg_username" placeholder="username" pattern="[a-zA-Z ]{5,}" maxlength="10">
+						<input type="text" class="form-control" id="reg_username" name="reg_username" required="required" placeholder="username">
 					</div>
 					<div class="form-group">
 						<label for="reg_password" class="sr-only">Password</label>
-						<input type="password" class="form-control" id="reg_password" name="reg_password" placeholder="password">
+						<input type="password" class="form-control" id="reg_password" name="reg_password" required="required" placeholder="password">
 					</div>
 					<div class="form-group">
 						<label for="reg_password_confirm" class="sr-only">Password Confirm</label>
 						<input type="password" class="form-control" id="reg_password_confirm" name="reg_password_confirm" placeholder="confirm password">
 					</div>
-					
 					<div class="form-group">
 						<label for="reg_email" class="sr-only">Email</label>
 						<input type="email" class="form-control" id="reg_email" name="reg_email" required="required" placeholder="email">
 					</div>
 					<div class="form-group">
 						<label for="reg_fullname" class="sr-only">Full Name</label>
-						<input type="text" class="form-control" id="reg_fullname" name="reg_fullname" placeholder="full name" pattern="[a-zA-Z ]{5,}" maxlength="30">
+						<input type="text" class="form-control" id="reg_fullname" name="reg_fullname" required="required" placeholder="full name" pattern="[a-zA-Z ]{5,}" maxlength="30">
 					</div>
 				</div>
 				<button type="submit" name="submit" class="login-button"><i class="fa fa-chevron-right"></i></button>
